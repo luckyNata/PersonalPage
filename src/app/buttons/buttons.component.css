@@ -17,11 +17,35 @@ a:hover {
 }
 .buttons {
     width: 100%;
+    max-width: 800px;
+    min-width: 800px;
+    margin: 0 auto;
     box-sizing: border-box;
     padding: 30px 0 10px;
 }
+.fio {
+  position: absolute;
+  right: 50%;
+  top: -62px;
+  border-bottom: 1px solid #c5c5c5;
+  margin-right: 40px;
+}
 .my_photo {
     width: 100%;
+    position: relative;
+}
+.my_photo:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 46px;
+  height: 51px;
+  background: url('app/images/o-line.png') no-repeat;
+  top: 0;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -48px;
+  z-index: 2;
 }
 .my_photo img{
     width: 280px;
@@ -38,17 +62,26 @@ a:hover {
     margin: 0 auto;
     position: relative;
 }
-
-.line{
-    display: block;
-    position: absolute;
-    width: 155px;
-    height: 102px;
-    background: url('app/images/y-line.png');
-    top: 0;
-    right: 0;
+.img:before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 155px;
+  height: 102px;
+  background: url('app/images/y-line.png') no-repeat;
+  bottom: -50px;
+  left: -114px;
 }
-
+.img:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 155px;
+  height: 102px;
+  background: url('app/images/g-line.png') no-repeat;
+  bottom: -50px;
+  right: -114px;
+}
 .links {
     margin-top: 46px;
 }
@@ -58,18 +91,17 @@ a:hover {
     width: 280px;
     height: 280px;
 }
+
 .clearfix:after {
     display: block;
     content: '';
     clear: both;
 }
 .person {
-    text-align: right;
-    padding-right: 20px;
-    box-sizing: border-box;
+    text-align: center;
 }
 .person img{
-    margin-right: -100px;
+
 }
 .info {
 
@@ -91,9 +123,7 @@ a:hover {
     left: 50%;
 }
 .experience {
-    text-align: left;
-    padding-left: 20px;
-    box-sizing: border-box;
+
 }
 .hidden {
     display: none;

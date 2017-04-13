@@ -11,21 +11,19 @@ import {MainService} from "app/shared/main.service";
 @Injectable()
 export class ButtonsComponent implements OnInit{
     @Input() hideFlag;
-    // hideFlag: Boolean;
+    name:string;
+    surname: string;
+
     constructor(private mainService: MainService){}
 
-    // hideThreeButtons(){
-    //     this.mainService.hideThreeButtons();
-    // }
     ngOnInit(){
-        // this.hideFlag =  this.mainService.getFlag();
-
+      this.mainService.getData().subscribe(mas => {
+        this.name  = mas.name;
+        this.surname  = mas.surname;
+      })
     }
     hideThreeButtons(){
-        // this.mainService.hideThreeButtons();
         this.mainService.changeBtn(true);
-        // this.hideFlag =  this.mainService.getFlag();
-        // console.log('hideFlag', this.hideFlag);
     }
 
 }
