@@ -1,0 +1,18 @@
+<div class = "wrapper" (back)="console.log('backkkkk')">
+    <div class="container main">
+        <header>
+            <main-title [flag]="flag" (onChange)="changeColor()" [myDynamicColor]="color"></main-title>
+        </header>
+
+        <buttons [hideFlag]="hideFlag" ></buttons>
+        <router-outlet></router-outlet>
+
+        <div class="buffer"></div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <social></social>
+        </div>
+    </footer>
+</div>

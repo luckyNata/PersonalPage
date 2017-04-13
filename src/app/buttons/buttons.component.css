@@ -1,0 +1,100 @@
+a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 33%;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.link_title {
+    margin-top: 10px;
+}
+a:hover {
+    /*text-decoration: underline;*/
+    cursor: pointer;
+}
+.buttons {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px 0 10px;
+}
+.my_photo {
+    width: 100%;
+}
+.my_photo img{
+    width: 280px;
+}
+.img  {
+    border: 1px solid #cbcdcc;
+    background-color: #e9f1ee;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.line{
+    display: block;
+    position: absolute;
+    width: 155px;
+    height: 102px;
+    background: url('app/images/y-line.png');
+    top: 0;
+    right: 0;
+}
+
+.links {
+    margin-top: 46px;
+}
+.round_wr {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.person {
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.person img{
+    margin-right: -100px;
+}
+.info {
+
+}
+.info:hover {
+
+}
+.knowledge {
+    position: relative;
+}
+.knowledge:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 52px;
+    background: url('app/images/b-line.png');
+    top: -49px;
+    left: 50%;
+}
+.experience {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}

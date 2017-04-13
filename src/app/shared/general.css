@@ -1,0 +1,14 @@
+.back button {
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #6fabd4;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.back button:hover {
+    background-color: #435789;
+}

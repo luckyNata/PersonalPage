@@ -1,0 +1,44 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #e7f0ee;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+header {
+    position: relative;
+    overflow: hidden;
+}
+main-title {
+    width: 100%;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+    margin-top: 30px;
+}
+knowledge{
+    display: block;
+    border: 1px solid red;
+    clear: left;
+}
+.main {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+.buffer {
+    height: 100px;
+}
+footer {
+    height: 100px;
+}
+

@@ -1,0 +1,31 @@
+.contacts {
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.fb, .in {
+    display: inline-block;
+    cursor: pointer;
+}
+.in {
+    margin-left: 10px;
+}
+.icons{
+   text-align: right;
+    width: 50%;
+    float: right;
+}
+.icons img {
+    height: 40px;
+}
+.phone {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    float: left;
+    color: #6fabd4;
+}
+.phone_icon {
+    height: 40px;
+    margin-right: 20px;
+}

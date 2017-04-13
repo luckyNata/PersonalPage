@@ -1,0 +1,35 @@
+.experience_wr {
+    position: relative;
+    overflow: hidden;
+}
+.experience, .exp_img {
+    width: 50%;
+    float: left;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.experience {
+    color: #fff;
+}
+.exp_img img{
+    width: 100%;
+}
+.img_wr {
+    width: 210px;
+    height: 206px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 30px auto 0;
+}
+.title {
+    text-align: left;
+    font: 20px Arial, sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+li {
+    font: 16px Arial, sans-serif;
+}

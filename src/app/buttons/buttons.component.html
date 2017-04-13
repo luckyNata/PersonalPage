@@ -1,0 +1,13 @@
+<div class="clearfix buttons" [ngClass]="{'hidden':hideFlag}">
+    <div class="my_photo">
+        <div class="img">
+            <div class="round_wr"><img src="app/images/my_photo.png" alt="Photo"></div>
+        </div>
+    </div>
+    <div class="links">
+        <a class="person" [routerLink]="['about']" (click)="hideThreeButtons()"><div class="line"></div><img src="app/images/about.png" alt=""><div class="link_title">about</div></a>
+        <a class="knowledge" [routerLink]="['knowledge']" (click)="hideThreeButtons()"><img src="app/images/knw.png" alt=""><div class="link_title">knowledge</div></a>
+        <a class="experience" [routerLink]="['experience']" (click)="hideThreeButtons()"><img src="app/images/exp.png" alt=""><div class="link_title">experience</div></a>
+    </div>
+
+</div>

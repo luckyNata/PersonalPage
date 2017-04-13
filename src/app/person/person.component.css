@@ -1,0 +1,25 @@
+.img {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+.img img {
+    width: 300px;
+}
+.short_info {
+    font: 16px Tahoma, sans-serif;
+    color: #fff;
+    float: left;
+    width: 50%;
+}
+.round_wr {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}

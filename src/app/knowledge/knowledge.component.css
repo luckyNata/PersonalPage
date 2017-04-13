@@ -1,0 +1,43 @@
+knowledge{
+    display: block;
+    clear: left;
+}
+.info_block {
+    font: 20px Arial, sans-serif;
+    color: azure;
+    position: relative;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    font: 14px Arial, sans-serif;
+}
+.item {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.skills {
+    width: 50%;
+    float: left;
+    margin: 30px 0 0;
+}
+ul {
+    padding: 0;
+}
+.title {
+    text-align: left;
+    font: 20px Arial, sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.kn_img {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+.kn_img img {
+    width: 70%;
+}
+.skills li {
+    font: 16px Arial, sans-serif;
+}

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="knowledge.component.css">
+<div class="info_block clearfix">
+    <div class="skills">
+        <div class="title">Knowledge</div>
+        <ul>
+            <li class="item" *ngFor="let skill of knowledge">{{skill}}</li>
+        </ul>
+        <div class="back">
+            <button (click)="goHome()">Back</button>
+        </div>
+    </div>
+    <div class="kn_img">
+        <img src="app/images/know.png" alt="knowledge">
+    </div>
+
+
+</div>

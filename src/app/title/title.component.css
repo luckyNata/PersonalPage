@@ -1,0 +1,12 @@
+.title {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    font-size: 20px;
+    color: forestgreen;
+}
+.visible {
+    color: red;
+    right: 0;
+    transition: right 1s;
+}
