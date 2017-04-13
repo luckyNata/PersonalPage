@@ -4,6 +4,8 @@ export class DataType  {
         public title: String,
         public name: String,
         public surname: String,
-        public knowledge : String[]
+        public knowledge : String[],
+        public experience : String[]
     ){}
+
 }

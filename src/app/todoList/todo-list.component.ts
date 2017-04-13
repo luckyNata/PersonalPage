@@ -1,7 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {OnInit} from '@angular/core';
-import {MainService} from '../shared/main.service';
-import {DataType} from "../shared/dataType";
+import {Component} from '@angular/core';
+
 
 @Component({
     moduleId: module.id,

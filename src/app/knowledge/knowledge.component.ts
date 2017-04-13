@@ -8,8 +8,8 @@ import {DataType} from "app/shared/dataType";
 @Component({
     moduleId: module.id,
     selector: 'knowledge',
-    templateUrl: 'knowledge.component.html',
-    styleUrls: ['../shared/general.css', 'knowledge.component.css']
+    templateUrl: './knowledge.component.html'
+    // styleUrls: ['../shared/general.css', 'knowledge.component.css']
 })
 
 @Injectable()

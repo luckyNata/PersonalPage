@@ -15,7 +15,7 @@ export class MainService {
 
     constructor(private http: Http, private router: Router){}
 
-    getData() : Observable {
+    getData() : Observable <any> {
         return this.http.get('api/data1')
             .map(res => res.json().data)
             .catch(this.catchError);
@@ -32,7 +32,7 @@ export class MainService {
     }
 
     catchError(error: any){
-        console.error(error.message || error);
+        return Observable.throw(error.message || error);
     }
 
     changeBtn(value: boolean){
