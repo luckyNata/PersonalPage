@@ -1,16 +1,18 @@
 <div class="experience_wr">
     <div class="experience">
-        <div class="title">experience</div>
+        <div class="title-wr">
+          <div class="title">experience</div>
+          <div class="title-small">Sites</div>
+        </div>
         <ul>
-            <li class="item" *ngFor="let exp of experience">{{exp}}</li>
+          <li class="item" *ngFor="let exp of experience">
+            <a href="{{exp}}">{{exp}}</a>
+            <a href="{{exp}}"><img src="app/images/arrow.png" alt="link"></a>
+          </li>
         </ul>
         <div class="back">
             <button (click)="goHome()">Back</button>
         </div>
     </div>
-    <div class="exp_img">
-        <div class="img_wr">
-            <img src="app/images/experience.png" alt="experience">
-        </div>
-    </div>
+
 </div>

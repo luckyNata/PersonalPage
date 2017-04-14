@@ -1,3 +1,4 @@
+
 .back button {
     padding: 0 30px;
     height: 40px;
@@ -11,4 +12,69 @@
 }
 .back button:hover {
     background-color: #435789;
+}
+.title-wr {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 150px;
+  margin-left: -50px;
+}
+
+.title-wr:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 46px;
+  height: 51px;
+  background: url('app/images/g-line-str.png') no-repeat;
+  top: 37px;
+  left: 100%;
+  z-index: 2;
+}
+.title-wr:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 121px;
+  height: 121px;
+  background: url('app/images/exp.png') no-repeat;
+  top: 85px;
+  right: -102px;
+  z-index: 1;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 700px;
+  margin: 20px auto;
+
+}
+
+li {
+  font: 20px Arial, sans-serif;
+  border: 1px solid #c5c5c5;
+  border-top: none;
+  line-height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:first-child {
+  border-top: 1px solid #c5c5c5;
+}
+.title {
+  text-align: left;
+  font: 35px FiraSans, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.title-small {
+  font: italic 20px FiraSans, sans-serif;
+  color: #c5c5c5;
+  text-align: left;
 }

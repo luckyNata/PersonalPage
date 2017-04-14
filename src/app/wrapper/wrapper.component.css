@@ -7,8 +7,10 @@
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-
+  min-height: 100vh;
+  margin-bottom: -100px;
 }
+
 .clearfix:after {
     display: block;
     content: '';
@@ -31,10 +33,7 @@ knowledge{
     border: 1px solid red;
     clear: left;
 }
-.main {
-    min-height: 100%;
-    margin-bottom: -100px;
-}
+
 .buffer {
     height: 100px;
 }

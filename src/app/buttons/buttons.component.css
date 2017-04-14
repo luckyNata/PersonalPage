@@ -19,16 +19,17 @@ a:hover {
     width: 100%;
     max-width: 800px;
     min-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0;
     box-sizing: border-box;
     padding: 30px 0 10px;
 }
 .fio {
   position: absolute;
   right: 50%;
-  top: -62px;
+  top: -85px;
   border-bottom: 1px solid #c5c5c5;
   margin-right: 40px;
+  font: 35px FiraSans;
 }
 .my_photo {
     width: 100%;

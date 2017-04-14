@@ -1,11 +1,23 @@
-
 <div class="info clearfix">
-    <div class="img"><img src="app/images/my_photo.png" alt="Photo"></div>
-    <div class="short_info">
-        Hello, my name is Nataliia. I am responsible. I am looking for a Frontend Developer position. I have more then 1 year experience.
+  <div class="title-wr">
+    <div class="title">About me</div>
+    <div class="title-small">Information</div>
+  </div>
+
+  <div class="short_info">
+    <div>Hi. I am a Front-end Developer.
+      I have 1 years commercial experience working in the Web Studio, providing responsive websites. The work I provide
+      is of highest quality, fully responsive, and tested on different devices.
     </div>
+    <a [routerLink]="['graduate']" routerLinkActive="active">Graduation</a>
+    <a [routerLink]="['personal']" routerLinkActive="active">Personal qualities</a>
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="back">
+    <button (click)="goHome()">Back</button>
+  </div>
 </div>
 
-<a [routerLink]="['graduate']" routerLinkActive="active" >Graduation</a>
-<a [routerLink]="['personal']" routerLinkActive="active">Personal qualities</a>
-<router-outlet></router-outlet>
+
+
