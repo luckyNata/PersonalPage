@@ -11,5 +11,5 @@ import {Component} from '@angular/core';
 })
 
 export class PersonGraguationComponent {
-    text: String = 'I graduated from National Technical University of Ukraine "KPI" in which there is <a href="http://ipt.kpi.ua/">Institute of Physics and Technology</a>';
+    text: String = 'I graduated from National Technical University of Ukraine "KPI" in which there isgit  <a href="http://ipt.kpi.ua/">Institute of Physics and Technology</a>';
 }
