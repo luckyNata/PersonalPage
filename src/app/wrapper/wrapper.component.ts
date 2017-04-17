@@ -13,16 +13,15 @@ import {Router} from '@angular/router';
 export class WrapperComponent implements OnInit{
     data1: DataType;
     flag: Boolean;
-    color: any;
     hideFlag: Boolean;
 
     constructor(private mainService: MainService,  private router: Router){}
     ngOnInit(){
         this.router.navigate(['']);
-        this.changeColor();
-        setInterval(() => {
-            this.changeColor();
-        }, 3000);
+        // this.changeColor();
+        // setInterval(() => {
+        //     this.changeColor();
+        // }, 3000);
 
 
         this.mainService.getData()
@@ -39,8 +38,8 @@ export class WrapperComponent implements OnInit{
         )
     }
 
-    changeColor(){
-        this.color = this.mainService.changeColor();
-    }
+    // changeColor(){
+    //     this.color = this.mainService.changeColor();
+    // }
 
 }

@@ -3,10 +3,9 @@
     top: 0;
     right: 100%;
     font-size: 30px;
-    color: forestgreen;
+    color: #13dbb9;
 }
 .visible {
-    color: red;
     right: 0;
     transition: right 1s;
 }

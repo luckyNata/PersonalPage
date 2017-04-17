@@ -23,7 +23,7 @@ export class MainService {
 
     changeColor(){
             let colors = ['a', 'b', 'c', 'd', 'e', 'f', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-            let color = '';
+            let color = '#';
             for (let j = 0; j < 6; j++) {
                 let i = Math.floor(Math.random() * colors.length);
                 color += colors[i];
