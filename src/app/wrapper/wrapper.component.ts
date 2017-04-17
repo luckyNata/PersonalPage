@@ -29,7 +29,6 @@ export class WrapperComponent implements OnInit{
             .subscribe(mas => {
                 this.data1 = mas;
                 this.flag = this.data1.flag;
-                console.log('data1', mas)
             });
 
 
@@ -38,8 +37,6 @@ export class WrapperComponent implements OnInit{
                 console.log('onInit', this.hideFlag);
             }
         )
-
-
     }
 
     changeColor(){

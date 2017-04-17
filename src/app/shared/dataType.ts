@@ -5,7 +5,9 @@ export class DataType  {
         public name: String,
         public surname: String,
         public knowledge : String[],
-        public experience : String[]
+        public experience : String[],
+        public personalSkills: String,
+        public graduation: String
     ){}
 
 }

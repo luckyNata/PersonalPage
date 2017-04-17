@@ -27,7 +27,7 @@
   content: '';
   width: 46px;
   height: 51px;
-  background: url('app/images/g-line-str.png') no-repeat;
+  background: url('../images/g-line-str.png') no-repeat;
   top: 37px;
   left: 100%;
   z-index: 2;
@@ -38,7 +38,7 @@
   content: '';
   width: 121px;
   height: 121px;
-  background: url('app/images/exp.png') no-repeat;
+  background: url('../images/exp.png') no-repeat;
   top: 85px;
   right: -102px;
   z-index: 1;

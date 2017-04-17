@@ -10,10 +10,10 @@ knowledge {
   text-align: center;
 }
 .title-wr:after {
-  background: url('app/images/knw.png') no-repeat;
+  background: url('../images/knw.png') no-repeat;
 }
 .title-wr:before {
-  background: url('app/images/b-line-str.png') no-repeat;
+  background: url('../images/b-line-str.png') no-repeat;
 }
 /*.skills {*/
 /*width: 50%;*/

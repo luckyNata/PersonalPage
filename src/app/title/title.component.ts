@@ -12,9 +12,9 @@ import {DataType} from "app/shared/dataType";
 export class TitleComponent{
     @Input() flag:Boolean;
     @Input() myDynamicColor: String;
-    @Output() onChange = new EventEmitter();
+    // @Output() onChange = new EventEmitter();
 
     changeCol(){
-        this.onChange.emit();
+        // this.onChange.emit();
     }
 }

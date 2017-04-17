@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MainService} from "../shared/main.service";
 
 
 @Component({
@@ -7,9 +8,23 @@ import {Component} from '@angular/core';
     template: `
             <div class="my_qualities">{{text}}</div>
             `,
-    styles: ['']
+    styles: [`
+      .my_qualities {
+        font: 16px Tahoma;
+        line-height: 23px;
+        text-align: left;
+        text-indent: 20px;
+      }
+    `]
 })
 
-export class PersonQualitiesComponent {
-    text: String = 'I am friendly, honest, responsible';
+export class PersonQualitiesComponent implements OnInit{
+  text: String = '';
+  constructor(private mainService: MainService){}
+
+  ngOnInit(){
+    this.mainService.getData().subscribe(mas => {
+      this.text = mas.personalSkills;
+    })
+  }
 }

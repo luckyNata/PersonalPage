@@ -21,7 +21,7 @@
   content: '';
   width: 46px;
   height: 51px;
-  background: url('app/images/g-line-str.png') no-repeat;
+  background: url('../images/g-line-str.png') no-repeat;
   top: 37px;
   left: 100%;
   z-index: 2;
@@ -32,7 +32,7 @@
   content: '';
   width: 121px;
   height: 121px;
-  background: url('app/images/exp.png') no-repeat;
+  background: url('../images/exp.png') no-repeat;
   top: 85px;
   right: -102px;
   z-index: 1;
@@ -70,23 +70,4 @@ li a:hover {
   text-decoration: underline;
 }
 
-/*.img_wr {*/
-/*width: 210px;*/
-/*height: 206px;*/
-/*border-radius: 50%;*/
-/*overflow: hidden;*/
-/*margin: 30px auto 0;*/
-/*}*/
-/*.title {*/
-  /*text-align: left;*/
-  /*font: 35px FiraSans, sans-serif;*/
-  /*text-transform: uppercase;*/
-  /*color: #000;*/
-  /*border-bottom: 1px solid #c5c5c5;*/
-/*}*/
 
-/*.title-small {*/
-  /*font: italic 20px FiraSans, sans-serif;*/
-  /*color: #c5c5c5;*/
-  /*text-align: left;*/
-/*}*/

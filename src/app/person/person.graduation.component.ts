@@ -1,15 +1,32 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {MainService} from "../shared/main.service";
 
 
 @Component({
-    moduleId: module.id,
-    selector: 'graduation',
-    template: `
-            <div class="my_graduation">{{text}}</div>
-            `,
-    styles: ['']
+  moduleId: module.id,
+  selector: 'graduation',
+  template: `
+    <div class="my_graduation">{{graduation}}</div>
+  `,
+  styles: [`
+    .my_graduation {
+      font: 16px Tahoma;
+      line-height: 23px;
+      text-align: left;
+      text-indent: 20px;
+    }
+  `]
 })
 
-export class PersonGraguationComponent {
-    text: String = 'I graduated from National Technical University of Ukraine "KPI" in which there isgit  <a href="http://ipt.kpi.ua/">Institute of Physics and Technology</a>';
+export class PersonGraguationComponent implements OnInit {
+  graduation: String = '';
+
+  constructor(private mainService: MainService) {
+  }
+
+  ngOnInit() {
+    this.mainService.getData().subscribe(mas => {
+      this.graduation = mas.graduation;
+    })
+  }
 }
