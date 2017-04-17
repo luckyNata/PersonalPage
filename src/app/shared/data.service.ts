@@ -10,7 +10,7 @@ export class InMemoryDb implements  InMemoryDbService {
             surname: 'Kravets',
             knowledge: ['HTML/HTML5', 'CSS/CSS3', 'JS', 'jQuery', 'Angular2', 'Angular-cli', 'Gulp, Grunt', 'Sass, Less', 'Git'],
             experience: ['http://blauberg-group.com',
-                'http://blaubergventilatoren.de/',
+                'http://blaubergventilatoren.de',
                 'http://blackorchid.co.uk',
                 'http://azvuk.ua',
                 'http://www.amrita.co.ua',

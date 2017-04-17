@@ -31,6 +31,11 @@ a:hover {
   margin-right: 40px;
   font: 35px Tahoma, sans-serif;
 }
+.position {
+  position: absolute;
+  top: 41px;
+  left: 0;
+}
 .my_photo {
     width: 100%;
     position: relative;

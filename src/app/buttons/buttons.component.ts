@@ -6,7 +6,7 @@ import {MainService} from "app/shared/main.service";
     moduleId: module.id,
     selector: 'buttons',
     templateUrl: 'buttons.component.html',
-    styleUrls: ['buttons.component.css']
+    styleUrls: ['../shared/general.css', 'buttons.component.css']
 })
 @Injectable()
 export class ButtonsComponent implements OnInit{
