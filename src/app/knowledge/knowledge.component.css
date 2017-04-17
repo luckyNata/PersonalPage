@@ -2,12 +2,12 @@ knowledge {
   display: block;
   clear: left;
 }
-
 .info_block {
   font: 20px Tahoma, sans-serif;
   position: relative;
   overflow: hidden;
   text-align: center;
+  margin-top: 100px;
 }
 .title-wr:after {
   background: url('../images/knw.png') no-repeat;
