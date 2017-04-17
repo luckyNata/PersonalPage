@@ -53,7 +53,7 @@ ul {
 }
 
 li {
-  font: 20px Arial, sans-serif;
+  font: 20px Tahoma, sans-serif;
   border: 1px solid #c5c5c5;
   border-top: none;
   line-height: 50px;
@@ -67,14 +67,14 @@ li:first-child {
 }
 .title {
   text-align: left;
-  font: 35px FiraSans, sans-serif;
+  font: 35px Tahoma, sans-serif;
   text-transform: uppercase;
   color: #000;
   border-bottom: 1px solid #c5c5c5;
 }
 
 .title-small {
-  font: italic 20px FiraSans, sans-serif;
+  font: italic 20px Tahoma, sans-serif;
   color: #c5c5c5;
   text-align: left;
 }

@@ -29,7 +29,7 @@ a:hover {
   top: -85px;
   border-bottom: 1px solid #c5c5c5;
   margin-right: 40px;
-  font: 35px FiraSans;
+  font: 35px Tahoma, sans-serif;
 }
 .my_photo {
     width: 100%;
@@ -101,15 +101,7 @@ a:hover {
 .person {
     text-align: center;
 }
-.person img{
 
-}
-.info {
-
-}
-.info:hover {
-
-}
 .knowledge {
     position: relative;
 }
