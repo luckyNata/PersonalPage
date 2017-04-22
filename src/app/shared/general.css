@@ -9,6 +9,7 @@
     outline: none;
     border-radius: 3px;
     text-transform: uppercase;
+  cursor: pointer;
 }
 .back button:hover {
     background-color: #435789;
