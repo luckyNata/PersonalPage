@@ -20,6 +20,11 @@ export class MainService {
             .map(res => res.json().data)
             .catch(this.catchError);
     }
+  getData2() : Observable <any> {
+    return this.http.get('api/data2')
+      .map(res => console.log(res.json().data))
+      .catch(this.catchError);
+  }
 
     changeColor(){
             let colors = ['a', 'b', 'c', 'd', 'e', 'f', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -38,5 +43,4 @@ export class MainService {
     changeBtn(value: boolean){
         this.btnHidden.emit(value);
     }
-
 }
