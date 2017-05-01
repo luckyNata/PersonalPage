@@ -1,0 +1,18 @@
+<div class="log_window"  *ngIf="!isClosed">
+  <form (ngSubmit)="logIn($event)" #form="ngForm">
+    <div class="close" (click)="closePopup()">X</div>
+    <div class="log_row">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" [(ngModel)]="user.username">
+    </div>
+    <div class="log_row">
+      <label for="pass">Password</label>
+      <input type="text" name="pass" id="pass" [(ngModel)]="user.userpass">
+    </div>
+    <!--<div class="log_row">-->
+      <!--<label for="pass2">Confirm password</label>-->
+      <!--<input type="text" name="pass2" id="pass2" [(ngModel)]="userpass2">-->
+    <!--</div>-->
+    <button class="log_btn" >Login</button>
+  </form>
+</div>

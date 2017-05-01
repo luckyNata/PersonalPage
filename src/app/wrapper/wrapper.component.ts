@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MainService} from 'app/shared/main.service';
 import {DataType} from "app/shared/dataType";
 import {Router} from '@angular/router';
+import {LoginService} from "../shared/login.service";
 
 @Component({
     moduleId: module.id,
@@ -15,7 +16,7 @@ export class WrapperComponent implements OnInit{
     flag: Boolean;
     hideFlag: Boolean;
 
-    constructor(private mainService: MainService,  private router: Router){}
+    constructor(private mainService: MainService,  private router: Router, private loginService: LoginService){}
     ngOnInit(){
         this.router.navigate(['']);
         // this.changeColor();
@@ -37,7 +38,9 @@ export class WrapperComponent implements OnInit{
             }
         )
     }
-
+    openPopup(){
+      this.loginService.setIsClosed(false);
+    }
     // changeColor(){
     //     this.color = this.mainService.changeColor();
     // }

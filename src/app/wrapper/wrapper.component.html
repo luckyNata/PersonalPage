@@ -3,7 +3,9 @@
         <header>
             <main-title [flag]="flag"></main-title>
         </header>
-
+      <div class="auth_line" *ngIf="!hideFlag">
+        <a [routerLink]="['login']" (click)="openPopup()">LogIn</a>
+      </div>
         <buttons [hideFlag]="hideFlag" ></buttons>
         <router-outlet></router-outlet>
 

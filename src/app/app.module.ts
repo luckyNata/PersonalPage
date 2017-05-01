@@ -17,15 +17,21 @@ import { routing } from './app.routing';
 import {PersonQualitiesComponent} from "./person/person.qualities.component";
 import {PersonGraguationComponent} from "./person/person.graduation.component";
 import {SocialComponent} from "./social/social.component";
+import { LoginComponent } from './login/login.component';
+import {LoginService} from "./shared/login.service";
+import {FormsModule} from "@angular/forms";
+import { PersonalFormComponent } from './personal-form/personal-form.component';
+import { DropdownDirective } from './shared/dropdown.directive';
+import {AuthGuard} from "./shared/auth-guard";
 
 
 @NgModule({
-  imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing],
+  imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule],
   declarations: [AppComponent, TitleComponent, PersonComponent, KnowledgeComponent, ButtonsComponent,
     ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent,
-    TodoListComponent, SocialComponent
+    TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective
   ],
-  providers:    [MainService],
+  providers:    [MainService, LoginService, AuthGuard],
   bootstrap:    [AppComponent]
 })
 export class AppModule { }

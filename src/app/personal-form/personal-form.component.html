@@ -1,0 +1,30 @@
+<div class="auth_line">
+  <div class="avatar">
+    <img src="../images/about.png" alt="Photo">
+  </div>
+  <div class="menu">
+    <div class="title">
+      Menu
+    </div>
+    <ul class="inner_menu">
+      <li class="item" (click)="showRights()">smth</li>
+      <li class="item logout" (click)="logOut()">LogOut</li>
+    </ul>
+  </div>
+
+</div>
+<form (ngSubmit)="saveChanges()">
+  <div>
+    <label for="name">Username</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div>
+    <label for="exp">Experience</label>
+    <input type="text" name="exp" id="exp">
+  </div>
+    <div>
+      <label for="know">Knowledge</label>
+      <input type="text" name="know" id="know">
+    </div>
+    <button class="btn">Save</button>
+</form>
