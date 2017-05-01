@@ -18,35 +18,38 @@ export class LoginService {
   constructor(private http:  Http, private router: Router) { }
 
   login(user: User): Observable <any> {
-    const body: any = `name=${user.username}&pass=${user.userpass}`;
-    console.log(body);
-    const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
+    // let body: any = 'name='+user.username+'&pass='+user.userpass;
+    // console.log(body);
+    let body = JSON.stringify(user);
+    let headers = new Headers({ 'Content-Type': 'application/json' });
+    // const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
 
-    // return this.http.post(this.apiLogUrl, body)
-    //   .map(res => {
-    //         console.log('res of login',res);
-    //         if(res.json()){
-    //
-    //           this.serviceUser = res.json().data;
-    //           console.log(this.serviceUser);
-    //
-    //         } else {
-    //           console.log('bad request');
-    //         }
-    //       });
+
+    return this.http.post(this.apiLogUrl, body, { headers: headers })
+      .map(res => { res.json();
+            console.log('res of login',res.json());
+            // if(res.json()){
+            //
+            //   this.serviceUser = res.json().data;
+            //   console.log(this.serviceUser);
+            //
+            // } else {
+            //   console.log('bad request');
+            // }
+          });
     /////////////////////////////////////////////////
-    return this.http.get(this.apiLogUrl)
-      .map(res => {
-        console.log('res of login',res.json());
-        if(res.json()){
-
-          this.serviceUser = res.json().data;
-          console.log(this.serviceUser);
-
-        } else {
-          console.log('bad request');
-        }
-      });
+    // return this.http.get(this.apiLogUrl)
+    //   .map(res => {
+    //     console.log('res of login',res.json());
+    //     if(res.json()){
+    //
+    //       this.serviceUser = res.json().data;
+    //       console.log(this.serviceUser);
+    //
+    //     } else {
+    //       console.log('bad request');
+    //     }
+    //   });
   }
 
   catchError(error: any){

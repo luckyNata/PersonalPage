@@ -2,12 +2,12 @@
   <div class="avatar">
     <img src="../images/about.png" alt="Photo">
   </div>
-  <div class="menu">
+  <div class="menu" appDropdown>
     <div class="title">
       Menu
     </div>
     <ul class="inner_menu">
-      <li class="item" (click)="showRights()">smth</li>
+      <li class="item" (click)="showPrivileges()"><a [routerLink]="['tabs']">Other</a></li>
       <li class="item logout" (click)="logOut()">LogOut</li>
     </ul>
   </div>
@@ -28,3 +28,4 @@
     </div>
     <button class="btn">Save</button>
 </form>
+<router-outlet></router-outlet>

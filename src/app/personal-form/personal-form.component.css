@@ -3,10 +3,67 @@
   height: 120px;
   border-radius: 50%;
   overflow: hidden;
+  position: absolute;
+  top: 10px;
+  right: 130px;
 }
 .avatar img {
   height:100%;
 }
+.menu {
+  width: 100px;
+  padding: 10px 10px 0 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font:20px Tahoma, sans-serif;
+}
+.menu .title {
+  text-transform: uppercase;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
+.menu li {
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 5px;
+  border-top: 1px solid #cecece;
+}
 .open {
-  border: 1px solid red;
+  background-color: #d1ebd8;
+  border: 1px solid #cecece;
+}
+.open .title {
+  text-decoration: underline;
+}
+.open .inner_menu{
+  display: block;
+}
+form {
+  margin-top: 150px;
+  text-align: center;
+}
+form input{
+  width: 80%;
+  height: 40px;
+  text-align: center;
+}
+form label {
+  display: block;
+  font: 16px Tahoma, sans-serif;
+  color: blue;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+}
+form .btn {
+  background-color: blue;
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  width: 100px;
+  height: 40px;
+  margin: 10px 0;
 }

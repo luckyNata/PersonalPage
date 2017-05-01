@@ -22,6 +22,7 @@ export class PersonalFormComponent implements OnInit {
     this.router.navigate(['']);
   }
   logOut() {
+    window.localStorage.removeItem('token');
     this.mainService.changeBtn(false);
     this.router.navigate(['']);
   }

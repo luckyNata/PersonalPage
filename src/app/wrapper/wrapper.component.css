@@ -11,6 +11,7 @@
   margin: 0 auto;
   min-height: 100vh;
   margin-bottom: -100px;
+  position: relative;
 }
 
 .clearfix:after {
@@ -18,7 +19,13 @@
   content: '';
   clear: both;
 }
-
+.auth_line a {
+  font: 16px Tahoma, sans-serif;
+  text-transform: uppercase;
+  color: #435789;
+  cursor: pointer;
+  text-decoration: none;
+}
 header {
   position: relative;
   overflow: hidden;

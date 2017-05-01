@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit{
     this.isClosed = true;
     this.loginService.login(this.user).subscribe(mas => {
       console.log('test');
+      window.localStorage.setItem('token', 'temporary_value');
       });
     // this.mainService.getData2().subscribe(mas => {
     //   this.data = mas;

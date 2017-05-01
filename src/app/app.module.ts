@@ -23,15 +23,16 @@ import {FormsModule} from "@angular/forms";
 import { PersonalFormComponent } from './personal-form/personal-form.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import {AuthGuard} from "./shared/auth-guard";
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
   imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule],
   declarations: [AppComponent, TitleComponent, PersonComponent, KnowledgeComponent, ButtonsComponent,
     ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent,
-    TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective
+    TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective, TabsComponent
   ],
-  providers:    [MainService, LoginService, AuthGuard],
+  providers:    [MainService, LoginService, AuthGuard, DropdownDirective],
   bootstrap:    [AppComponent]
 })
 export class AppModule { }
