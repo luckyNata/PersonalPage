@@ -24,6 +24,9 @@ import { PersonalFormComponent } from './personal-form/personal-form.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import {AuthGuard} from "./shared/auth-guard";
 import { TabsComponent } from './tabs/tabs.component';
+import { ShowOneDirective } from './shared/show-one.directive';
+import { ShowOneTriggerDirective } from './shared/show-one-trigger.directive';
+import { ShowContainerDirective } from './shared/show-container.directive';
 
 
 @NgModule({
@@ -32,7 +35,7 @@ import { TabsComponent } from './tabs/tabs.component';
     ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent,
     TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective, TabsComponent
   ],
-  providers:    [MainService, LoginService, AuthGuard, DropdownDirective],
+  providers:    [MainService, LoginService, AuthGuard, DropdownDirective,  ShowOneDirective, ShowOneTriggerDirective, ShowContainerDirective],
   bootstrap:    [AppComponent]
 })
 export class AppModule { }

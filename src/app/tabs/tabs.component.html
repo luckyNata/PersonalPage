@@ -1,16 +1,17 @@
-<div class="tabs_wrapper">
+<div class="tabs_wrapper" appShowContainer>
   <ul class="tabs">
-    <li class="tabs_item">First</li>
-    <li class="tabs_item">Second</li>
-    <li class="tabs_item">Third</li>
+    <li class="tabs_item" appShowOneTrigger="tab1">First</li>
+    <li class="tabs_item" appShowOneTrigger="tab2">Second</li>
+    <li class="tabs_item" appShowOneTrigger="tab3">Third</li>
   </ul>
-  <div class="tabs_block">
+
+  <div class="tabs_block" appShowOne="tab1">
     <div class="logo logo1">Info1</div>
   </div>
-  <div class="tabs_block">
+  <div class="tabs_block" appShowOne="tab2">
     <div class="logo logo2">Info2</div>
   </div>
-  <div class="tabs_block">
+  <div class="tabs_block" appShowOne="tab3">
     <div class="logo logo3">Info3</div>
   </div>
 </div>
