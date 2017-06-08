@@ -27,10 +27,11 @@ import { TabsComponent } from './tabs/tabs.component';
 import { ShowOneDirective } from './shared/show-one.directive';
 import { ShowOneTriggerDirective } from './shared/show-one-trigger.directive';
 import { ShowContainerDirective } from './shared/show-container.directive';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule],
+  imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule, ReactiveFormsModule],
   declarations: [AppComponent, TitleComponent, PersonComponent, KnowledgeComponent, ButtonsComponent,
     ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent,
     TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective, TabsComponent

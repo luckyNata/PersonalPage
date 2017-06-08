@@ -1,7 +1,7 @@
 <div class = "wrapper" (back)="console.log('backkkkk')">
     <div class="container main">
         <header>
-            <main-title [flag]="flag"></main-title>
+          <main-title [flag]="flag"><div #outside>From ng-content</div></main-title>
         </header>
       <div class="auth_line" *ngIf="!hideFlag">
         <a [routerLink]="['login']" (click)="openPopup()">LogIn</a>

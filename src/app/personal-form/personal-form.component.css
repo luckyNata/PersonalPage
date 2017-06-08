@@ -67,3 +67,17 @@ form .btn {
   height: 40px;
   margin: 10px 0;
 }
+input{
+  margin-bottom: 10px;
+}
+[type="radio"]{
+  width: auto!important;
+}
+.radio {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+input.ng-dirty.ng-invalid {
+  border: 1px solid red;
+}

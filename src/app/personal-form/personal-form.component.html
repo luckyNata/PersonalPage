@@ -13,19 +13,35 @@
   </div>
 
 </div>
-<form (ngSubmit)="saveChanges()">
+<form (ngSubmit)="saveChanges()" [formGroup]="myForm">
+
   <div>
     <label for="name">Username</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" formControlName="name">
   </div>
-  <div>
-    <label for="exp">Experience</label>
-    <input type="text" name="exp" id="exp">
-  </div>
+  <div class="form-group" formGroupName="user-data">
+    <div>
+      <label for="exp">Experience</label>
+      <input type="text" name="exp" id="exp" formControlName="experience">
+    </div>
     <div>
       <label for="know">Knowledge</label>
-      <input type="text" name="know" id="know">
+      <input type="text" name="know" id="know" formControlName="knowledge">
     </div>
-    <button class="btn">Save</button>
+  </div>
+  <!--<div class="error" *ngIf="myForm.get('experience').hasError('required') && myForm.get('experience').touched">Error in Data</div>-->
+  <div *ngFor="let g of genders" class="radio">
+    <label>
+      <input type="radio" name="gender" [value]="g" formControlName="gender">{{g}}
+    </label>
+  </div>
+  <div class="hobbies" formArrayName="hobbies">
+    <div class="title">Hobbies</div>
+    <div *ngFor="let hobby of myForm.get('hobbies').controls; let i = index">
+      <input type="text" formControlName="{{i}}">
+    </div>
+  </div>
+  <button class="btn" (click)="addHobby($event)">Add hobby</button>
+  <button class="btn">Save</button>
 </form>
 <router-outlet></router-outlet>
