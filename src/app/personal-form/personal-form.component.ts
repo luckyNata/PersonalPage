@@ -68,4 +68,6 @@ export class PersonalFormComponent implements OnInit {
   showRights() {
     console.log('this is other information');
   }
+
+
 }

@@ -15,6 +15,7 @@ export class WrapperComponent implements OnInit{
     data1: DataType;
     flag: Boolean;
     hideFlag: Boolean;
+    images:Array<any> = [{"sType":"img","imgSrc":"https://pp.userapi.com/c416429/v416429967/4c78/SWeSCTH0lM4.jpg"},{"sType":"img","imgSrc":"https://images.pexels.com/photos/40870/cube-game-cube-instantaneous-speed-pay-40870.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"},{"sType":"div","content":"Hello It's slidable content"}];
 
     constructor(private mainService: MainService,  private router: Router, private loginService: LoginService){}
     ngOnInit(){
@@ -44,5 +45,7 @@ export class WrapperComponent implements OnInit{
     // changeColor(){
     //     this.color = this.mainService.changeColor();
     // }
+
+
 
 }

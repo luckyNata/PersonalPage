@@ -28,14 +28,16 @@ import { ShowOneDirective } from './shared/show-one.directive';
 import { ShowOneTriggerDirective } from './shared/show-one-trigger.directive';
 import { ShowContainerDirective } from './shared/show-container.directive';
 import { ReactiveFormsModule } from '@angular/forms';
-import {LoaderModule} from "./personal-form/slim.module";
+import {contentSlider, printSlide, SafeHtmlPipe, slideAjaxDiv} from "./carousel/carousel";
+// import {Example2Component} from "./personal-form/example";
+// import {KSSwiperModule} from 'angular2-swiper';
 
 
 @NgModule({
-  imports:      [BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule, ReactiveFormsModule, LoaderModule],
+  imports:      [ BrowserModule, HttpModule, InMemoryWebApiModule.forRoot(InMemoryDb), RouterModule, routing, FormsModule, ReactiveFormsModule],
   declarations: [AppComponent, TitleComponent, PersonComponent, KnowledgeComponent, ButtonsComponent,
-    ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent,
-    TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective, TabsComponent
+    ExperienceComponent, WrapperComponent, PersonQualitiesComponent, PersonGraguationComponent, SafeHtmlPipe,
+    TodoListComponent, SocialComponent, LoginComponent, PersonalFormComponent, DropdownDirective, TabsComponent, contentSlider, slideAjaxDiv, printSlide
   ],
   providers:    [MainService, LoginService, AuthGuard, DropdownDirective,  ShowOneDirective, ShowOneTriggerDirective, ShowContainerDirective],
   bootstrap:    [AppComponent]
